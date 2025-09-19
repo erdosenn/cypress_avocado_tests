@@ -9,3 +9,11 @@ yarn-error.log*
 .pnp.js
 
 .vscode/*
+/.idea/.gitignore
+/.idea/cypress_avocado_tests.iml
+/.idea/modules.xml
+/.idea/vcs.xml
+/cypress.env.json
+/package-lock.json
+/logs/downloads/downloads.html.crdownload
+/logs/downloads/downloads.html (1).crdownload
