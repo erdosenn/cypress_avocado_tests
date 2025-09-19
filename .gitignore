@@ -9,3 +9,7 @@ yarn-error.log*
 .pnp.js
 
 .vscode/*
+/.idea/.gitignore
+/.idea/cypress_avocado_tests.iml
+/.idea/modules.xml
+/.idea/vcs.xml
