@@ -2,7 +2,7 @@ Looking at the project structure, I'll examine some key files to better understa
 
 # Cypress Avocado Tests
 
-Repository contains comprehensive E2E and API test automation suite built with Cypress and TypeScript for testing online store functionality.
+Repository contains a comprehensive E2E and API test automation suite built with Cypress and TypeScript for testing online store functionality.
 
 ## 📋 Table of Contents
 
