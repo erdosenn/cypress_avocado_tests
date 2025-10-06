@@ -1,21 +1,19 @@
-Looking at the project structure, I'll examine some key files to better understand the project and create a comprehensive README.md file.```markdown
-
 # Cypress Avocado Tests
 
 Repository contains a comprehensive E2E and API test automation suite built with Cypress and TypeScript for testing online store functionality.
 
 ## 📋 Table of Contents
 
-- [About](#about)
-- [Tech Stack](#tech-stack)
-- [Project Structure](#project-structure)
-- [Prerequisites](#prerequisites)
-- [Quick Start](#quick-start)
-- [Manual Setup](#manual-setup)
-- [Running Tests](#running-tests)
-- [Configuration](#configuration)
-- [Docker Support](#docker-support)
-- [Contributing](#contributing)
+- [About](#-about)
+- [Tech Stack](#-tech-stack)
+- [Project Structure](#-project-structure)
+- [Prerequisites](#-prerequisites)
+- [Quick Start](#-quick-start)
+- [Manual Setup](#option-2-manual-setup)
+- [Running Tests](#-running-tests)
+- [Configuration](#-configuration)
+- [Docker Support](#-docker-support)
+- [Contributing](#-contributing)
 
 ## 🚀 About
 
