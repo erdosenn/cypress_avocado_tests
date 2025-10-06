@@ -1,0 +1,50 @@
+{
+  "docker": {
+    "shopEnv": {
+      "login": {
+        "admin": {
+          "login": "testowy",
+          "password": "testowe_haslo"
+        }
+      },
+      "payments": {
+        "one": 3,
+        "two": 7,
+        "three": 6,
+        "four": 1
+      }
+    }
+  },
+  "stage": {
+    "shopEnv": {
+      "login": {
+        "admin": {
+          "login": "testowy_stage",
+          "password": "testowe_stage"
+        }
+      },
+      "payments": {
+        "one": 3,
+        "two": 9,
+        "three": 8,
+        "four": 1
+      }
+    }
+  },
+  "package": {
+    "shopEnv": {
+      "login": {
+        "admin": {
+          "login": "testowy_paczka",
+          "password": "testowe_paczka"
+        }
+      },
+      "payments": {
+        "one": 1,
+        "two": 8,
+        "three": 7,
+        "four": 2
+      }
+    }
+  }
+}
