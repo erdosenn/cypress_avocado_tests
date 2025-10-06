@@ -8,47 +8,47 @@ import PluginConfigOptions = Cypress.PluginConfigOptions;
 import * as os from "node:os";
 
 const cypressConfig: Cypress.ConfigOptions = {
-    video: false,
-    defaultCommandTimeout: 15000,
-    requestTimeout: 15000,
-    pageLoadTimeout: 15000,
-    experimentalModifyObstructiveThirdPartyCode: true,
-    e2e: {
-        experimentalStudio: true,
-        supportFile: "./support/gui.ts",
-        fixturesFolder: "./support/fixtures",
-        screenshotsFolder: "./logs/screenshots",
-        videosFolder: "./logs/videos",
-        downloadsFolder: "./logs/downloads",
-        setupNodeEvents(on: PluginEvents, config: PluginConfigOptions): void {
-            allureCypress(on, config, {
-                environmentInfo: {
-                    os_platform: os.platform(),
-                    os_release: os.release(),
-                    os_version: os.version(),
-                    node_version: process.version,
-                },
-                resultsDir: "./cypress/logs/allure-results",
-            });
+  video: false,
+  defaultCommandTimeout: 15000,
+  requestTimeout: 15000,
+  pageLoadTimeout: 15000,
+  experimentalModifyObstructiveThirdPartyCode: true,
+  e2e: {
+    experimentalStudio: true,
+    supportFile: "./support/gui.ts",
+    fixturesFolder: "./support/fixtures",
+    screenshotsFolder: "./logs/screenshots",
+    videosFolder: "./logs/videos",
+    downloadsFolder: "./logs/downloads",
+    setupNodeEvents(on: PluginEvents, config: PluginConfigOptions): void {
+      allureCypress(on, config, {
+        environmentInfo: {
+          os_platform: os.platform(),
+          os_release: os.release(),
+          os_version: os.version(),
+          node_version: process.version,
         },
-        retries: {
-            runMode: 0,
-            openMode: 0,
-        },
-        viewportWidth: 1920,
-        viewportHeight: 1080,
+        resultsDir: "./cypress/logs/allure-results",
+      });
     },
+    retries: {
+      runMode: 0,
+      openMode: 0,
+    },
+    viewportWidth: 1920,
+    viewportHeight: 1080,
+  },
 };
 
 cypressConfig.e2e.baseUrl = cypressSettings[cypressSettings.SUT].url;
 cypressConfig.e2e.specPattern = cypressSettings[cypressSettings.SUT].specPath;
 
 if (cypressConfig.e2e.baseUrl.includes("shoparena.pl")) {
-    cypressConfig.e2e.env = shopEnvData.package;
+  cypressConfig.e2e.env = shopEnvData.package;
 } else if (cypressConfig.e2e.baseUrl.includes("qashoper.eu")) {
-    cypressConfig.e2e.env = shopEnvData.stage;
+  cypressConfig.e2e.env = shopEnvData.stage;
 } else if (cypressConfig.e2e.baseUrl.includes("shoper.docker.shoper.tech")) {
-    cypressConfig.e2e.env = shopEnvData.docker;
+  cypressConfig.e2e.env = shopEnvData.docker;
 }
 cypressConfig.chromeWebSecurity = false;
 
