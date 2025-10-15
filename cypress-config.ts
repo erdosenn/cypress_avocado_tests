@@ -43,11 +43,11 @@ const cypressConfig: Cypress.ConfigOptions = {
 cypressConfig.e2e.baseUrl = cypressSettings[cypressSettings.SUT].url;
 cypressConfig.e2e.specPattern = cypressSettings[cypressSettings.SUT].specPath;
 
-if (cypressConfig.e2e.baseUrl.includes("shoparena.pl")) {
+if (cypressConfig.e2e.baseUrl.includes("shop-package.com")) {
   cypressConfig.e2e.env = shopEnvData.package;
-} else if (cypressConfig.e2e.baseUrl.includes("qashoper.eu")) {
+} else if (cypressConfig.e2e.baseUrl.includes("shop-stage.com")) {
   cypressConfig.e2e.env = shopEnvData.stage;
-} else if (cypressConfig.e2e.baseUrl.includes("shoper.docker.shoper.tech")) {
+} else if (cypressConfig.e2e.baseUrl.includes("localhost-docker.com")) {
   cypressConfig.e2e.env = shopEnvData.docker;
 }
 cypressConfig.chromeWebSecurity = false;
