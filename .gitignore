@@ -17,3 +17,4 @@ yarn-error.log*
 /package-lock.json
 /logs/downloads/downloads.html.crdownload
 /logs/downloads/downloads.html (1).crdownload
+/.idea/compiler.xml
