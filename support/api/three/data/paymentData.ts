@@ -1,9 +1,12 @@
 import {
-    generateCity,
-    generateFirstName, generateLastName, generatePhone,
-    generateRandomEmail,
-    generateRandomNumber, generateStreetAddress,
-    generateZipCode
+  generateCity,
+  generateFirstName,
+  generateLastName,
+  generatePhone,
+  generateRandomEmail,
+  generateRandomNumber,
+  generateStreetAddress,
+  generateZipCode,
 } from "../../../dataGenerators";
 
 export function prepareAllData(configId: string): object {

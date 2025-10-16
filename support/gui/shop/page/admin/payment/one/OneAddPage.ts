@@ -7,7 +7,7 @@ import {
   RepresentativeData,
 } from "../../../../dataType/OnboardingDataOne";
 
-class TwoAddPage extends AdminAbstractPage {
+class OneAddPage extends AdminAbstractPage {
   public readonly URI: string =
     "/configPayments/edit/id/" + this.SHOP_ENV["payments"]["one"];
 
@@ -262,4 +262,4 @@ class TwoAddPage extends AdminAbstractPage {
   }
 }
 
-export default TwoAddPage;
+export default OneAddPage;

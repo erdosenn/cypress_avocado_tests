@@ -1,7 +1,7 @@
 import AdminAbstractPage from "../../AdminAbstractPage";
 import { TranslationPL } from "../../../../dictionary/TranslationPL";
 import { PaymentMethod } from "../../../../dictionary/PaymentMethod";
-import {DropdownType} from "../../../ShopAbstractPage";
+import { DropdownType } from "../../../ShopAbstractPage";
 
 class OneEditPage extends AdminAbstractPage {
   // URI constant
@@ -94,7 +94,7 @@ class OneEditPage extends AdminAbstractPage {
     );
     this.clickButton(this.BUTTON_SUBMIT);
   }
-  public setApAsDefaultPaymentGate(): void {
+  public setOneAsDefaultPaymentGate(): void {
     this.visit();
     this.setDefaultPaymentGate();
   }
