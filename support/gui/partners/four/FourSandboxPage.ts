@@ -1,4 +1,3 @@
-import * as allure from "allure-js-commons";
 import { PartnerAbstractPage } from "../PartnerAbstractPage";
 
 export class FourSandboxPage extends PartnerAbstractPage {
