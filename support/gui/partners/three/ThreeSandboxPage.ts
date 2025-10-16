@@ -1,4 +1,4 @@
-import {PartnerAbstractPage} from "../PartnerAbstractPage";
+import { PartnerAbstractPage } from "../PartnerAbstractPage";
 
 export class ThreeSandboxPage extends PartnerAbstractPage {
   private readonly INPUT_PHONE: string = "//input[@id='phone']";

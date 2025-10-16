@@ -1,4 +1,4 @@
-import {PartnerAbstractPage} from "../PartnerAbstractPage";
+import { PartnerAbstractPage } from "../PartnerAbstractPage";
 
 export class TwoSandboxPage extends PartnerAbstractPage {
   private readonly BUTTON_COMPLETE_PAYMENT: string =

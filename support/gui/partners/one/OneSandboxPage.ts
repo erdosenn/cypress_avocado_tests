@@ -1,4 +1,4 @@
-import {PartnerAbstractPage} from "../PartnerAbstractPage";
+import { PartnerAbstractPage } from "../PartnerAbstractPage";
 
 export class OneSandboxPage extends PartnerAbstractPage {
   private readonly LINK_RETURN_TO_SHOP: string =

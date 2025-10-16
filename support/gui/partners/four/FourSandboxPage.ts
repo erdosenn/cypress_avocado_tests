@@ -1,6 +1,5 @@
-
 import * as allure from "allure-js-commons";
-import {PartnerAbstractPage} from "../PartnerAbstractPage";
+import { PartnerAbstractPage } from "../PartnerAbstractPage";
 
 export class FourSandboxPage extends PartnerAbstractPage {
   private readonly FIELD_EMAIL: string = "//*[@id='email']";
