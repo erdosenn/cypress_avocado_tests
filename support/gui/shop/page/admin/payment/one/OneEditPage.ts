@@ -1,7 +1,7 @@
 import AdminAbstractPage from "../../AdminAbstractPage";
 import { TranslationPL } from "../../../../dictionary/TranslationPL";
 import { PaymentMethod } from "../../../../dictionary/PaymentMethod";
-import { DropdownType } from "../../../ShopAbstractPage";
+import {DropdownType} from "../../../ShopAbstractPage";
 
 class OneEditPage extends AdminAbstractPage {
   // URI constant
